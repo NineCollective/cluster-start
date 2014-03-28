@@ -1,0 +1,25 @@
+{
+  "name": "cluster-start",
+  "version": "0.1.0",
+  "description": "cluster-start is a wrapper for the Node.js cluster module to start applications in cluster mode, utilizing recluster",
+  "main": "cluster.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/NineCollective/cluster-start.git"
+  },
+  "keywords": [
+    "cluster"
+  ],
+  "author": "Nine Collective",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NineCollective/cluster-start/issues"
+  },
+  "homepage": "https://github.com/NineCollective/cluster-start",
+  "dependencies": {
+    "recluster": "^0.3.6"
+  }
+}
