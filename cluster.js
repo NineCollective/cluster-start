@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var recluster = require('recluster'),
     path = require('path');
 

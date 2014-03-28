@@ -1,8 +1,8 @@
 {
   "name": "cluster-start",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "cluster-start is a wrapper for the Node.js cluster module to start applications in cluster mode, utilizing recluster",
-  "main": "cluster.js",
+  "bin": {"cluster": "./cluster.js"},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
