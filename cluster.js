@@ -11,7 +11,7 @@ if(process.argv.length < 3) {
 var scriptName = process.argv[2];
 
 
-var cluster = recluster(path.join(__dirname, scriptName));
+var cluster = recluster(path.join(process.cwd(), scriptName));
 cluster.run();
 
 process.on('SIGUSR2', function() {
