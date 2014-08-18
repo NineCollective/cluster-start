@@ -8,10 +8,15 @@ if(process.argv.length < 3) {
     process.exit(1);
 }
 
-var scriptName = process.argv[2];
+var scriptName = process.argv[2],
+    procs = process.argv[3],
+    options = {};
 
+if(procs){
+    options.workers = procs;
+}
 
-var cluster = recluster(path.join(process.cwd(), scriptName));
+var cluster = recluster(path.join(process.cwd(), scriptName), options);
 cluster.run();
 
 process.on('SIGUSR2', function() {
